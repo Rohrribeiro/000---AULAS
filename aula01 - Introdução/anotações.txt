@@ -1,0 +1,24 @@
+AULA 01 - INTRODUÇÃO
+
+- Como HTML, CSS e Javascript funcionam?
+    - HTML => É a estrutura da pagina, o conteúdo.
+    - CSS => Da estilo aos elementos.
+    - Javascript => da dinamismo aos elementos.
+
+    - O HTML é o ponto de entrada para o nosso site, é por ele que será chamado o CSS, o javascript e outros recursos do servidor ou da web. 
+- Como eu coloco uma página na internet?
+    - No gerenciador de arquivos do nosso serviço de hospedagem  existe uma pasta com o nome ‘plublic_html’, que é onde ficara os arquivos do nosso site.
+    - Quando o servido a requisição, é nessa pasta que ele vai procurar o arquivo correspondente a requisição.
+    - por padrão, o servidor sempre vai procurar por index.html, pois isso é importante a gente colocar esse nome na pagina principal do projeto.
+
+- Frontend e Backend
+    - Quando você tenta entrar em um site, o navegador manda uma requisição(pedido) para um servidor, onde ele vai retornar o html e se for necessário o css, js e outros arquivos que o site depende para funcionar.
+    - Esses arquivos estando na minha maquina, o navegador vai começar a montar o site de acordo com o que esta no HTML.
+    - Tudo que esta rodando no meu computador é o FRONTEND.
+    -  Existe servidor que é servidor de arquivos, ele só manda os arquivos e o navegador que se vire, e existe o servidor de aplicação, que nele tem um software que é como se fosse um GERENTE, e quando receber uma requisição, dependendo do que for, ele vai tomar uma decisão do que deve ser feito e  isso se Chama BACKEND, seria as regras que ele vai seguir para sua aplicação/site
+    - O backend pode simplesmente servir arquivos como por exemplo retornar um documento html, como criar um html em tempo real  que seria renderização do lado do servidor(Renderização ou Server Side Rendering).
+    - A diferença do Servidor de arquivos e do servidor de aplicação é que um só serve arquivos e o outro pode fazer diversos tipos de serviços como pegar dados de um banco de dados e criar um html, depois retornar pra você os dados do banco de dados de forma organizada etc.
+    - Todo computador que esta ligado na internet tem um numero de IP e é através desse endereço que a gente consegue fazer uma requisição.
+    - Como não é pratico. a gente decorar o IP do site, a gente compra um nome de domínio e coloca no site. 
+    -  Quando a gente coloca o site e da enter, a requisição vai para um servidor de DNS (Domain Name Server ), que traduz ou busca o endereço de IP correspondente ao domínio, e retornar apara o cliente.
+    - Ai, do Servidor DNS a gente é redirecionando para o servidor onde está o site que a gente quer acessar.

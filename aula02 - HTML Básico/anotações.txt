@@ -1,0 +1,64 @@
+AULA 02 - HTML BÁSICO
+
+- TAG - 01
+    - Tag é composta pod <>
+    - dentro conter o nome semântico do elemento e pode conter atributos
+    - Algumas tag são compostas por tag de abertura e tag de fechamento para delimitar o conteúdo que vai ser referente aquela tag.
+￼
+
+    - Também existem tags que não precisa de fechamento pois não  um conteúdo, e sim fazem referencia ou link para algo externo. 
+￼
+
+    -  O conjunto de Tag de fechamento, conteúdo e tag de fechamento se chama elemento HTML.
+    - A través das tag o mecanismo de bus SEO consegue fazer uma varredura e dar a quem esta pesquisando o que é mais relevante, e por isso é importante declarar de forma semântica os elementos , pois se alguém procura mouse da apple e você colocou em um paragrafo, mas outra pessoa colocou como titulo, o google entende que  a pagina da outra pessoa é mais relevante.
+    - Pode ser que na hora de dar manutenção em códigos de terceiros a gente encontre tags assim <h1 />, isso é porque o html não é o 5, então por padrão vamos fazer sem a barra pois não tem necessidade mas se tiver que dar manutenção a gente já sabe.
+- ESTRUTURA BÁSICA - 02
+    -  <!DOCTYPE html> => informa que o documento esta na versão 5 do HTML
+    - <html lang=“pt-br”> => começo e final do documento + idioma do documento
+    - <head> => cabeça do documento, local onde fica as configurações para o documento funcionar corretamente e fazer links com arquivos externos
+    - <body> => corpo do documento, local onde vai ficar todos os elementos da página.
+    - <title>=. referece ao titulo da página, o mesmo que aparece na aba do navegador.
+    - <meta chararset=“UTF-8”> => tag e atributo que dizem qual o dicionário deve ser usando no documento.
+    - Elementos que compartilham o mesmo pai, como é o caso do head e body, são chamados de filhos ou tags irmãs.
+    - ATRIBUTOS
+        - O atributo serve para dar novas características e  mais informações para a tag
+- TÍTULOS E PARÁGRAFOS - 03
+    - <h1> a <h6> => usada para títulos, o que diferencia um do outro é que quanto maior o numero depois do h, menor é a relevância do titulo.
+    - Normalmente a tag <h1> é a tag principal da nossa página.
+    - Como boa prática só se usa o <h1> uma vez na página, os outros não tem problema repetir.
+    - <p> => tag usada para elementos de paragrafo.
+    - O HTML não se importa se esta tudo na mesma linha ou não, pois ele separa os elementos de acordo com suas tags.
+    - Então, se a gente pular linha usando o enter, no navegar isso vai ser ignorado.
+- FORMATAÇÃO
+    - <b> => Negrito => não tem valor semântico
+    - <strong> => semanticamente diz que esse texto é mais importante que o restante
+    - <i> => texto em itálico
+    - <em> => semanticamente diz que deve se dar ênfase naquele texto
+    - <mark> => tag pra marcar  o texto como se fosse um marca texto comum.
+    - <small> => deixa o texto um pouco menor que o padrão 
+    - <del> => risca o texto, normalmente quer dizer que foi modificado ou não tem mais validade
+    - <s> => tem o mesmo efeito de <del> porem não tem semântica
+    - <ins> => refere a insert, deixa um sublinhado embaixo querendo dizer que aquilo foi inserido depois.
+    - <sub> => texto subscrito, abaixo da linha normal do texto
+    - <sup> => tem a mesma função do sub, porem deixa a cima da linha base, mais alto que o texto normal
+- LINKS
+    - <a> => tag usada para fazer links dentro e fora da página.
+        - href => atributo que se refere a hiper link referencie, ou link para onde deve ir
+- IMAGENS
+    - <img src=“imagem.jpg” alt=“Imagem de nada”>
+        - alt => atributo para acessibilidade, dentro você descreve o conteúdo para pessoas com deficiência visual, alem de facilitar a vida do google dizendo o que é para ele indexar melhor.
+        - width/heght => permite mudar o tamanho da imagem proporcionalmente pelo html
+- QUEBRA DE LINHA
+    - <br> => quebra a linha
+- LISTAS
+    - <ul> => lista não ordenada
+    - <ol> => Lista ordenada
+        -  <li> => item de lista
+- TABELAS
+    - <table> => inicio e fim da tabela
+        - <tr> => table row => linha da tabela
+        - <th> => table heading => cabeçalho da tabela
+        - <td> => table data => célula da tabela
+- COMENTÁRIOS
+    - Usamos comentários para explicar de forma simples trechos complexos de código para nós mesmos ou terceiros no futuro.
+        - <!— comentário —>
