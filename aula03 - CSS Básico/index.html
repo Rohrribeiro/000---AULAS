@@ -8,7 +8,255 @@
 </head>
 
 <body>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- CSS inline -->
+    <p style="color:blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab quidem esse deserunt, ad maxime cupiditate cum illo perferendis quas quia vel deleniti ratione consequatur est, commodi expedita magnam iure.
+    </p>
+
+
+    <!-- CSS interno -->
+
+    <head>
+        <style>
+            p {
+                color: rgb;
+            }
+        </style>
+    </head>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab quidem esse deserunt, ad maxime cupiditate cum illo perferendis quas quia vel deleniti ratione consequatur est, commodi expedita magnam iure.</p>
+
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi velit et cupiditate doloribus expedita corrupti aliquid nemo iusto natus delectus consequatur nam molestias, eos, tenetur autem omnis harum sint tempore. </p>
+
+
+    <p id="paragrafo-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam corporis accusamus ipsum possimus vero qui autem suscipit ducimus fugit aperiam, sed vitae reprehenderit maxime in fugiat nam magni! Deserunt.</p>
+
+    <!-- CORES -->
+    <!-- RGB -->
+    <p style="color:#292929">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab quidem esse deserunt, ad maxime cupiditate cum illo perferendis quas quia vel deleniti ratione consequatur est, commodi expedita magnam iure.</p>
+
+    <!-- RGBA -->
+    <p style="color:rgba(223, 51, 8, 0.5)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab quidem esse deserunt, ad maxime cupiditate cum illo perferendis quas quia vel deleniti ratione consequatur est, commodi expedita magnam iure.</p>
+
+    <!-- BACKGROUND -->
+    <!-- background-image: url("img/download.jpeg"); -->
+
+
+    <!-- DIV -->
+    <style>
+        #caixa1 {
+            background: url("img/download.jpeg") center/cover no-repeat fixed;
+            /* background-color: rgb(246, 91, 91); */
+            padding: 10px;
+        }
+        
+        .paragrafo_div {
+            background-color: rgb(0, 0, 0, 0);
+        }
+    </style>
+    <div id="caixa1">
+        <p class="paragrafo_div">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt iste qui rerum beatae pariatur sint alias ratione est a ad eius accusantium, quibusdam quod, illum neque, cum magni accusamus id.
+        </p>
+        <div id="subDiv">
+            <p class="paragrafo_div">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt iste qui rerum beatae pariatur sint alias ratione est a ad eius accusantium, quibusdam quod, illum neque, cum magni accusamus id.
+        </div>
+        </p>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <h2>Unidades de Medida - Fixa</h2>
+
+    <p>1 Centimetro</p>
+    <div id="cm"></div>
+
+    <p>1 Milimetros</p>
+    <div id="mm"></div>
+
+    <p>1 Pelegada = (2,54cm)</p>
+    <div id="in"></div>
+
+    <p>10 Pixels</p>
+    <div id="px"></div>
+
+    <p>10 ponto</p>
+    <div id="pt"></div>
+
+    <p>1 Picas = (12 pontos)</p>
+    <div id="pt"></div>
+
+    <hr>
+
+    <h2> - UNIDADES DE MEDIDAS - REFERÊNCIA</h2>
+
+    <h3>Medida - em</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container">
+        texto no container
+        <div class="inside">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - rem</h3>
+
+    texto no Body (tamanho padrão 16 px)
+    <div class="container2">
+        texto no container
+        <div class="inside2">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - vw</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container3">
+        texto no container
+        <div class="inside3">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - vh</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container4">
+        texto no container
+        <div class="inside4">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - vmin</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container5">
+        texto no container
+        <div class="inside5">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - vmax</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container6">
+        texto no container
+        <div class="inside6">
+            texto no inside
+        </div>
+    </div>
+
+    <h3>Medida - %</h3>
+    texto no Body (tamanho padrão 16 px)
+    <div class="container7">
+        texto no container
+        <div class="inside7">
+            texto no inside
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+
+    <h2>MARGIN E PADDING</h2>
+
+    <h3>MARGIN</h3>
+
+    <div id="base"></div>
+
+    <div id="containerNovo">
+        texto qualquer
+    </div>
+
+
+    <br>
+    <hr>
+
+    <h2>BORDER</h2>
+
+    <div class="borda">
+        Conteudo
+    </div>
+
+    <br>
+    <hr>
+
+    <h2>BOX MODEL</h2>
+
+    <div class="containerBox">
+        <div class="content">
+
+            Conteudo
+        </div>
+    </div>
+
+    <h3>box-sizing:border-box;</h3>
+
+
+    <h4>Sem border-box</h4>
+    <div class="quadrado">
+
+    </div>
+
+    <div class="quadrado2">
+
+    </div>
+
+    <h4>Com border-box</h4>
+    <div class="quadrado3">
+
+    </div>
+
+    <div class="quadrado4">
+
+    </div>
+
+
+    <br>
+    <hr>
+
+    <h2>AJUSTES DE TEXTO</h2>
+    <br>
+
+    <p class=" ajustesTexto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel laboriosam quaerat dolorum. Aliquid quae culpa cum aliquam, aut cumque a magni repellat unde quaerat eligendi odio labore. Dignissimos, eaque a!</p>
+
+    <br>
+    <hr>
+
+    <h2>FONTES</h2>
+
+    <p class="fontes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur, nisi vitae aut repudiandae omnis fugit odit porro rem, cupiditate dolor asperiores dolores saepe animi similique assumenda nihil ullam praesentium?
+    </p>
+
+    <br>
+    <hr>
+
+    <h2>ESTILOS DE LINK</h2>
+
+    <div class="divLink">
+
+        <a href="#" class="links">Cadastrar</a>
+    </div>
+
+    <!-- LISTAS -->
+
+    <h2>LISTAS</h2>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
 </body>
 
 </html>

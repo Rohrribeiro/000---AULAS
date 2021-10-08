@@ -1,3 +1,285 @@
-    * {
-        background-color: #f6f6f6;
-    }
+html {
+    font-size: 20px;
+}
+
+* {
+    background-color: #f6f6f6;
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+#paragrafo-4 {
+    color: green;
+}
+
+#subDiv {
+    background: rgb(248, 209, 34);
+}
+
+#cm {
+    background: rgb(230, 173, 18);
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm {
+    background: rgb(230, 18, 18);
+    width: 1mm;
+    height: 1mm;
+}
+
+#in {
+    background: rgb(230, 173, 18);
+    width: 1in;
+    height: 1in;
+}
+
+#px {
+    background: rgb(230, 18, 18);
+    width: 10px;
+    height: 10px;
+}
+
+#pt {
+    background: rgb(230, 173, 18);
+    width: 10pt;
+    height: 10pt;
+}
+
+#pc {
+    background: rgb(230, 173, 18);
+    width: 10pt;
+    height: 10pt;
+}
+
+.container {
+    /* tamanho padrão da fonte é 20px */
+    font-size: 20px;
+    width: 300px;
+    background: blue;
+}
+
+.inside {
+    /* 1em é = 20px que foi o que herdou do pai*/
+    font-size: 1em;
+    /* então 2em = 100px que vai ser o tamanho  do da largura do container inside*/
+    width: 2em;
+    background: red;
+}
+
+.container2 {
+    width: 15rem;
+    background: blue;
+}
+
+.inside2 {
+    /* Então esse elemento vai ter 300px pq o pai raiz tem 20px padrão na font-size*/
+    width: 15rem;
+    background: red;
+}
+
+.container3 {
+    width: 100vw;
+    background: blue;
+}
+
+.inside3 {
+    /* a unidade de pedia vw é referente a largura da janela em %, e 1vw = 1% da largura da janela */
+    width: 50vw;
+    background: red;
+}
+
+.container4 {
+    width: 100vw;
+    background: blue;
+}
+
+.inside4 {
+    /* a unidade de pedia vw é referente a largura da janela em %, e 1vw = 1% da largura da janela */
+    width: 50vw;
+    background: red;
+}
+
+.container5 {
+    width: 100vmin;
+    background: greenyellow;
+}
+
+.inside5 {
+    /* a unidade de pedia vw é referente a largura da janela em %, e 1vw = 1% da largura da janela */
+    width: 50vw;
+    background: red;
+}
+
+.container6 {
+    width: 50vmax;
+    background: rgb(47, 255, 141);
+}
+
+.inside6 {
+    /* a unidade de pedia vw é referente a largura da janela em %, e 1vw = 1% da largura da janela */
+    width: 50vw;
+    background: red;
+}
+
+.container7 {
+    width: 50%;
+    background: rgb(255, 95, 47);
+}
+
+.inside7 {
+    /* a unidade de pedia vw é referente a largura da janela em %, e 1vw = 1% da largura da janela */
+    width: 50%;
+    background: rgb(230, 205, 205);
+}
+
+
+/* MARGIN E PADDING */
+
+#base {
+    height: 30px;
+    background-color: red;
+}
+
+#containerNovo {
+    background-color: blue;
+    color: white;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+
+/* BORDA */
+
+.borda {
+    border: 1px solid black;
+    /* border-top-color: red; */
+    /* border-right-color: rgb(17, 0, 255); */
+    border-color: red green blue yellow;
+    border-width: 10px 2px 3px 4px;
+    background-color: rgb(224, 224, 224);
+}
+
+
+/* BOX MODEL */
+
+.containerBox {
+    background-color: red;
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 5px;
+}
+
+.content {
+    background-color: #ddd;
+    /* outline: 5px solid salmon; */
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    border: 5px solid red;
+}
+
+.quadrado2 {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+}
+
+.quadrado3 {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.quadrado4 {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+}
+
+
+/* AJUSTES DE TEXTO */
+
+.ajustesTexto {
+    color: red;
+    text-align: justify;
+    text-indent: 35px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    word-spacing: 5px;
+    text-shadow: 2px 5px 10px rgb(150, 150, 150);
+}
+
+
+/* FONTES */
+
+.fontes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+
+
+/* ESTILOS DE LINK */
+
+.divLink {
+    width: 100px;
+    margin: 20px auto;
+}
+
+.links {
+    margin: 10px auto;
+    text-decoration: none;
+    /* background-color: tomato; */
+    color: tomato;
+    cursor: progress;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid tomato;
+}
+
+.links:visited {
+    color: black;
+}
+
+.links:hover {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.links:active {
+    background-color: red;
+}
+
+
+/* LISTAS */
+
+ul {
+    list-style-type: none;
+    list-style-image: url("../img/download.jpeg");
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgb(188, 188, 188);
+    border: 2px solid greenyellow;
+}
